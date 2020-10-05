@@ -5,18 +5,20 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RepoComponent } from './repo/repo.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent,
     HomeComponent,
     ProfileComponent,
     RepoComponent,
+    PageNotFoundComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
