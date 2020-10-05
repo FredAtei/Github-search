@@ -1,27 +1,70 @@
 # GithubSearch
+<table>
+<tr>
+<td>
+The Quote app enables its uses to post qoutes and upvote or downvote them
+</td>
+</tr>
+</table>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+## Author
+Fred Atei
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Deploy
+Here is a working live demo : 
 
-## Code scaffolding
+## BDD
+1. Where to start in the process:
+- The Contact Us section at the bottom
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. What to test and what not to test:
+- You can test the Name and Email confirmation 
 
-## Build
+3. How much to test in one go:
+- Can go for long number of tests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+4. What to call the tests:
+- 
+   
+5. How to understand why a test fails:
+- The Mailchimp link is maybe not active
 
-## Running unit tests
+### Development
+Want to contribute? Great!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To fix a bug or enhance an existing module, follow these steps:
 
-## Running end-to-end tests
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Bug / Feature Request
 
-## Further help
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://fredatei.github.io/Github-search/issues/new) by including your search query and the expected result.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://fredatei.github.io/Github-search/issues/new). Please include sample queries and their corresponding results.
+
+
+## Built with 
+
+- [WSschools - HTML](https://www.w3schools.com/html/default.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+- [Visual Studio Code](https://code.visualstudio.com/) - Extensive list of components and  Bundled Javascript plugins.
+- [Bootstrap](https://getbootstrap.com/) - Has a vast variety of CSS code that can is used by programmers to simply work load with its many styles waiting to be implimented to the work.
+- [Angular](https://angular.io/) - AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write.
+
+## Contact
+
+Reach Out: akamaatei@gmail.com
+           0741259136.   
+
+## Copyright
+© 2020
+
+## [License](https://github.com/FredAtei/Github-search/blob/master/LICENSE)
+
+MIT © [Fred Atei ](https://github.com/FredAtei/Github-search)
