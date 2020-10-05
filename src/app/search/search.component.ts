@@ -9,6 +9,11 @@ export class SearchComponent implements OnInit {
 
   public githubUserQuery: string;
 
+
+  public searchUser() {
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
