@@ -5,8 +5,8 @@
   <ng-progress></ng-progress>
   <form (ngSubmit)='findProfile()' #searchForm='ngForm'>
     <div class="form-group">
-      <input type="text" class="form-control" placeholder="search  git repos with username" [(ngModel)]="username"
-        name="username" (keyup)="findProfile()">
+      <input type="text" class="form-control" placeholder="username" [(ngModel)]="username" name="username"
+        (keyup)="findProfile()">
     </div>
   </form>
   <h2 appHighlight>Repository</h2>

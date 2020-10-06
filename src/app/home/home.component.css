@@ -10,6 +10,7 @@
   color: white;
   opacity: 0.9;
 }
+
 .profile{
   background-color: #24292e;
   width:250px;
@@ -17,8 +18,8 @@
   padding: 2.5%;
   font-size: 20px;
   color:white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 .repo{
   background-color: #24292e;
   width:250px;
@@ -26,5 +27,8 @@
   padding: 2.5%;
   font-size: 20px;
   color:white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h1{
+  background-color: #24292e;
 }
