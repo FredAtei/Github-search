@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../environments/environment'
+import { environment } from 'src/environments/environment.prod';
 import { Profile } from './profile-class/profile';
 import { Repo } from './repo';
 
@@ -14,7 +14,7 @@ export class GitSearchService {
   repo: Repo;
 
   constructor(private http: HttpClient) {
-    this.profile = new Profile("", "", "", "", "", 0, 0, 0, new Date());
+    this.profile = new Profile("", "", "", "", "", 0, 0, 0);
     this.repo = new Repo("", "", "");
     this.username = '';
   }
@@ -41,7 +41,6 @@ export class GitSearchService {
         this.profile.public_repos = response.public_repos
         this.profile.followers = response.followers
         this.profile.following = response.following
-        this.profile.created_at = response.created_at
 
         resolve()
       },
