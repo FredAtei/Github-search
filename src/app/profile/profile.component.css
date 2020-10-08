@@ -3,7 +3,7 @@
   display: block;
   margin-left: 75%;
   margin-right: auto;
-  width: 50%;
+  width: 50%
 
 }
 
@@ -39,8 +39,7 @@ li{
   height: auto;
   text-align: center;
   padding: 2%;
-  background-color: #24292e;
+  background-color: #4CAF50;
   font-size: 20px;
   color:white;
-  
 }

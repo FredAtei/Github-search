@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment'
 import { Profile } from './profile-class/profile';
 import { Repo } from './repo';
 
@@ -12,9 +12,10 @@ export class GitSearchService {
   private username: string;
   profile: Profile;
   repo: Repo;
+  repoName: string;
 
   constructor(private http: HttpClient) {
-    this.profile = new Profile("", "", "", "", "", 0, 0, 0);
+    this.profile = new Profile("", "", "", "", "", 0, 0, 0, new Date());
     this.repo = new Repo("", "", "");
     this.username = '';
   }
@@ -28,11 +29,10 @@ export class GitSearchService {
       public_repos: number;
       followers: number;
       following: number;
-      created_at: Date
     }
 
     let promise = new Promise((resolve, reject) => {
-      this.http.get<ApiResponse>(environment.apiUrl + this.username + environment.apiKey).toPromise().then(response => {
+      this.http.get<ApiResponse>("https://api.github.com/users/" + this.username + "/?access_token=9f6919b52a9e0d7bbd29946300e86b6bf583cce5").toPromise().then(response => {
         this.profile.avatar_url = response.avatar_url
         this.profile.name = response.name
         this.profile.url = response.url
@@ -62,7 +62,7 @@ export class GitSearchService {
     }
 
     let promise = new Promise((resolve, reject) => {
-      this.http.get<ApiResponse>(environment.apiUrl + this.username + environment.apiRepos).toPromise().then(response => {
+      this.http.get<ApiResponse>("https://api.github.com/users/" + this.username + "/repos?access_token=9f6919b52a9e0d7bbd29946300e86b6bf583cce5").toPromise().then(response => {
         this.repo.name = response.name
         this.repo.description = response.description
         this.repo.html_url = response.html_url
@@ -80,6 +80,10 @@ export class GitSearchService {
   }
   updateProfile(username: string) {
     this.username = username;
+  }
+
+  updateRepo(repo: string) {
+    this.repoName = repo;
   }
 
 }
