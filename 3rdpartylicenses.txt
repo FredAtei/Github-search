@@ -16,7 +16,7 @@ MIT
 @ngx-progressbar/core
 MIT
 
-@ngx-progressbar/http-client
+@ngx-progressbar/http
 MIT
 
 css-loader
